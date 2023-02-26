@@ -1,0 +1,64 @@
+baseURL = 'https://fire.canadiandataguy.com/'
+languageCode = 'en-us'
+title = 'Canadian Data Guy'
+theme = "anatole"
+
+[params]
+title = "I'm Jitesh Soni"
+author = "Canadian Data Guy"
+description = """
+Call me Soni
+"""
+profilePicture = "images/profile.jpg"
+
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://de.linkedin.com/"
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:mail@example.com"
+
+
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
+[[main]]
+name = "Accomplishments"
+weight = 500
+identifier = "accomplishments"
+
+[[main]]
+name = "Awards"
+weight = 510
+identifier = "awards"
+url = "/awards/"
+parent = "accomplishments"
+
+[[main]]
+name = "Certifications"
+weight = 520
+identifier = "certifications"
+url = "/certifications/"
+parent = "accomplishments"  
